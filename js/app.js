@@ -37,7 +37,7 @@ btn0.addEventListener("click", () => {
   animImg.src = "./img/yes.gif";
   animImg.style.width = "300px";
   mainText.classList.add("yes-page");
-  mainText.style.fontFamily = "Arial";
+  mainText.style.fontFamily = "Open Sans";
   mainText.style.textAlign = "left";
   mainText.textContent =
     "My love, My baby, Woman of my dreams. I can't think of a better person to spend my life with, I love you so much.";
@@ -52,7 +52,7 @@ btn0.addEventListener("click", () => {
     animImg.src = "./img/main-header.gif";
     mainText.classList.remove("yes-page");
     mainText.textContent = initialMainText;
-    mainText.style.fontFamily = "Monotype corsiva";
+    mainText.style.fontFamily = "Pacifico";
     mainText.style.textAlign = "center";
     subText.textContent = initialSubText;
     subText.classList.remove("yes-page");
@@ -64,9 +64,11 @@ btn0.addEventListener("click", () => {
 
 btn1.addEventListener("click", () => {
   animImg.src = "./img/witty rose.gif";
+  animImg.style.marginTop = "3%";
   animImg.style.width = "300px";
+  animImg.style.height = "300px";
   mainText.classList.add("yes-page");
-  mainText.style.fontFamily = "Arial";
+  mainText.style.fontFamily = "Open Sans";
   mainText.style.textAlign = "left";
   mainText.textContent = "Nice Try Chidinma, You're Not Mad";
 
@@ -80,7 +82,7 @@ btn1.addEventListener("click", () => {
     animImg.src = "./img/main-header.gif";
     mainText.classList.remove("yes-page");
     mainText.textContent = initialMainText;
-    mainText.style.fontFamily = "Monotype corsiva";
+    mainText.style.fontFamily = "Pacifico";
     mainText.style.textAlign = "center";
     subText.textContent = initialSubText;
     subText.classList.remove("yes-page");
