@@ -9,6 +9,12 @@ const animImg = document.querySelector(".anim-img");
 const btn0 = document.getElementById("btn-0");
 const btn1 = document.getElementById("btn-1");
 
+const initialMainText = "Lorem Ipsium";
+const initialSubText = "Will You Be My Valentine?";
+
+const initialBtn0Text = "YES!!!";
+const initialBtn1Text = "Mad O";
+
 // ON LOAD ANIMATION
 
 window.addEventListener("load", () => {
@@ -30,13 +36,58 @@ btn0.addEventListener("click", () => {
   // mainBody.style.visibility = "hidden";
   animImg.src = "./img/yes.gif";
   animImg.style.width = "300px";
-  textArea.classList.add("yes-page");
-  // text[1].style.fontFamily = "Arial";
-  // text[1].style.textAlign = "left";
+  mainText.classList.add("yes-page");
+  mainText.style.fontFamily = "Arial";
+  mainText.style.textAlign = "left";
   mainText.textContent =
     "My love, My baby, Woman of my dreams. I can't think of a better person to spend my life with, I love you so much.";
 
-  subText.textContent = "Awwwwwwwwwwwwwwwwwwwn I Love You Babe";
+  subText.classList.add("yes-page");
+  subText.textContent = "Awwwwwwwwwwwwn I Love You Babe";
+  subText.style.textAlign = "left";
   btn0.textContent = "Say Yes Again 😍";
   btn1.classList.add("hide");
+
+  btn0.addEventListener("click", () => {
+    animImg.src = "./img/main-header.gif";
+    mainText.classList.remove("yes-page");
+    mainText.textContent = initialMainText;
+    mainText.style.fontFamily = "Monotype corsiva";
+    mainText.style.textAlign = "center";
+    subText.textContent = initialSubText;
+    subText.classList.remove("yes-page");
+    subText.style.textAlign = "center";
+    btn0.textContent = initialBtn0Text;
+    btn1.classList.remove("hide");
+  });
+});
+
+btn1.addEventListener("click", () => {
+  animImg.src = "./img/witty rose.gif";
+  animImg.style.width = "300px";
+  mainText.classList.add("yes-page");
+  mainText.style.fontFamily = "Arial";
+  mainText.style.textAlign = "left";
+  mainText.textContent = "Nice Try Chidinma, You're Not Mad";
+
+  subText.classList.add("yes-page");
+  subText.textContent = "Now Go Back And Hit YES";
+  subText.style.textAlign = "left";
+  btn1.textContent = "Take Me Back 😢";
+  btn0.classList.add("hide");
+
+  btn1.addEventListener("click", () => {
+    animImg.src = "./img/main-header.gif";
+    mainText.classList.remove("yes-page");
+    mainText.textContent = initialMainText;
+    mainText.style.fontFamily = "Monotype corsiva";
+    mainText.style.textAlign = "center";
+    subText.textContent = initialSubText;
+    subText.classList.remove("yes-page");
+    subText.style.textAlign = "center";
+    btn0.classList.remove("hide");
+    btn0.textContent = initialBtn0Text;
+    btn1.classList.remove("hide");
+    btn1.textContent = initialBtn1Text;
+  });
 });
