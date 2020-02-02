@@ -70,7 +70,7 @@ btn1.addEventListener("click", () => {
   mainText.classList.add("yes-page");
   mainText.style.fontFamily = "Open Sans";
   mainText.style.textAlign = "left";
-  mainText.textContent = "Nice Try Chidinma, You're Not Mad";
+  mainText.textContent = "Nice Try Lorem Ipsium, You're Not Mad";
 
   subText.classList.add("yes-page");
   subText.textContent = "Now Go Back And Hit YES";
