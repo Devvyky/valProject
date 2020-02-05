@@ -58,12 +58,6 @@ body {
   font-size: 0.8rem;
 }
 
-.text-area h5 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-
 .btn {
   display: grid;
   position: fixed;
