@@ -49,6 +49,7 @@ body {
   text-align: center;
   font-family: "Pacifico", cursive;
   font-size: 1.5rem;
+  margin-top: 40%;
 }
 
 .text-area h5 {
@@ -93,7 +94,7 @@ body {
 }
 
 .yes-page {
-  line-height: 1.5;
+  line-height: 1.1;
   text-align: left;
   font-weight: 200;
   margin-top: 50px;

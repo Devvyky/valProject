@@ -38,6 +38,7 @@ btn0.addEventListener("click", () => {
   animImg.style.width = "300px";
   mainText.classList.add("yes-page");
   mainText.style.fontFamily = "Open Sans";
+  mainText.style.marginTop = "50%";
   mainText.style.textAlign = "left";
   mainText.textContent =
     "My love, My baby, Woman of my dreams. I can't think of a better person to spend my life with, I love you so much.";
@@ -64,7 +65,7 @@ btn0.addEventListener("click", () => {
 
 btn1.addEventListener("click", () => {
   animImg.src = "./img/witty rose.gif";
-  animImg.style.marginTop = "3%";
+  animImg.style.marginTop = "20%";
   animImg.style.width = "300px";
   animImg.style.height = "300px";
   mainText.classList.add("yes-page");
